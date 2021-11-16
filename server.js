@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const { sequelize } = require('./app/models/index'); 
-const cors=require("cors");
 
 // Setting
 const PORT = process.env.PORT || 5000;
@@ -10,8 +9,6 @@ const PORT = process.env.PORT || 5000;
 // Para poder rellenar el req.body
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
-app.use(cors());
 
 // Rutas
 app.use('/api', require('./app/routes'));
