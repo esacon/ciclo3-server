@@ -59,7 +59,7 @@ module.exports = {
 
         if (response.length === 0) {
             Usuarios.create(info).then(user => {
-                res.redirect("https://git.heroku.com/pub-ciclo3.git/admin");
+                res.redirect("https://pub-ciclo3.herokuapp.com/admin");
             });
         } else {
             Conexiones.update({
@@ -77,7 +77,7 @@ module.exports = {
                 }
             }).then(result => {
                 console.log('Usuario updated.');
-                res.redirect("https://git.heroku.com/pub-ciclo3.git/admin");
+                res.redirect("https://pub-ciclo3.herokuapp.com/admin");
             });
         }        
     },

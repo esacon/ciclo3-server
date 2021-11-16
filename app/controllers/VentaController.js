@@ -20,7 +20,7 @@ module.exports = {
             email_vendedor: req.body.email_vendedor,
             estado: 0
         }).then(product => {
-            res.redirect("https://git.heroku.com/pub-ciclo3.git/ventas/register");
+            res.redirect("https://pub-ciclo3.herokuapp.com/ventas/register");
             return;
         }).catch(function(err) {
             console.log(err);
@@ -42,7 +42,7 @@ module.exports = {
                 id: req.body.uuid
             }
         }).then(result => {
-            res.redirect("https://git.heroku.com/pub-ciclo3.git/ventas/modify");
+            res.redirect("https://pub-ciclo3.herokuapp.com/ventas/modify");
             return;
         }).catch(function(err) {
             console.log(err);
