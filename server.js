@@ -18,7 +18,7 @@ app.use('/api', require('./app/routes'));
 
 // Arrancamos el servidor
 app.listen(PORT, function () {
-    console.log(`La app ha arrancado en http://localhost:${PORT}`);
+    console.log(`La app ha arrancado en ${PORT}`);
 
     sequelize.sync({ force: false }).then(() => {
         console.log("Se ha establecido la conexión");

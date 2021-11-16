@@ -14,7 +14,7 @@ module.exports = {
             valor: req.body.valor,
             stock: req.body.stock
         }).then(product => {
-            res.redirect("http://localhost:3000/productos/register");
+            res.redirect("https://git.heroku.com/pub-ciclo3.git/productos/register");
             return;
         }).catch(function(err) {
             console.log(err);
@@ -33,7 +33,7 @@ module.exports = {
                 id: req.body.uuid
             }
         }).then(result => {
-            res.redirect("http://localhost:3000/productos/modify");
+            res.redirect("https://git.heroku.com/pub-ciclo3.git/productos/modify");
             return;
         }).catch(function(err) {
             console.log(err);
